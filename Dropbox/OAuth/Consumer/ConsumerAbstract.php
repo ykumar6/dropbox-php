@@ -149,7 +149,7 @@ abstract class ConsumerAbstract
 	protected function getSignedRequest($method, $url, $call, array $additional = array())
 	{
 		// Get the request/access token
-		$token = $this->getToken();
+		global $token;
 		
 		// Generate a random string for the request
 		$nonce = md5(microtime(true) . uniqid('', true));

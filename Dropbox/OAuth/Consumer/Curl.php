@@ -44,7 +44,7 @@ class Curl extends ConsumerAbstract
 		$this->consumerSecret = $secret;
 		$this->storage = $storage;
 		$this->callback = $callback;
-		$this->authenticate();
+	//	$this->authenticate();
 	}
 
 	/**
